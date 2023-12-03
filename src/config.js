@@ -1,13 +1,14 @@
+require("dotenv").config();
 module.exports = {
   pool: {
-    host: "localhost",
-    port: 5432,
-    user: "postgres",
-    password: "25262829",
-    database: "dindin",
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_DATABASE,
   },
   jwt: {
-    senhaJwt: "senha_secreta",
+    senhaJwt: process.env.PASS_JWT,
     options: {
       expiresIn: "1d",
     },
