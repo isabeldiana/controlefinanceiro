@@ -24,7 +24,7 @@ const verificarUsuarioLogado = async (req, res, next) => {
 
     next();
   } catch (error) {
-    res.status(401).json({ mensagem: "Não autorizado" });
+    return res.status(401).json({ mensagem: "Não autorizado" });
   }
 };
 

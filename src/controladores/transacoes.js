@@ -68,7 +68,7 @@ const listarTransacoes = async (req, res) => {
         [idUsuarioLogado(req, res)]
       );
 
-      return res.json(transacoesDetalhadas.rows);
+      return res.status(200).json(transacoesDetalhadas.rows);
     }
 
     if (filtros) {
@@ -173,7 +173,7 @@ const atualizarTransacao = async (req, res) => {
       [descricao, valor, data, categoria_id, tipo, id]
     );
 
-    return res.status(204).send();
+    return res.status(204);
   } catch (error) {
     return res.status(500).json("Erro interno do servidor");
   }
