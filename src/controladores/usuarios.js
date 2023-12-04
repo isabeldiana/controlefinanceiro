@@ -1,4 +1,4 @@
-const { pool } = require("../conexao");
+const pool = require("../conexao");
 const config = require("../config");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
@@ -7,6 +7,7 @@ const {
   verificadorCamposPreenchidosRegistroUsuario,
   idUsuarioLogado,
 } = require("../intermediario/filtros");
+const { log } = require("console");
 
 const cadastrarUsuario = async (req, res) => {
   const { nome, email } = req.body;
@@ -39,6 +40,7 @@ const cadastrarUsuario = async (req, res) => {
 
     return res.status(201).json(resultado);
   } catch (error) {
+    console.log(error);
     return res.status(500).json({ mensagem: "Erro interno do servidor" });
   }
 };

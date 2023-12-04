@@ -1,12 +1,13 @@
-const pg = require("pg");
-const config = require("./config");
+require("dotenv").config();
+const { Pool } = require("pg");
 
-const pool = new pg.Pool(config.pool);
-
-const types = pg.types;
-
-types.setTypeParser(1114, function (stringValue) {
-  return stringValue;
+const pool = new Pool({
+  host: process.env.DB_HOST,
+  port: process.env.DB_PORT,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  database: process.env.DB_DATABASE,
+  // ssl: { rejectUnauthorized: false },
 });
 
-module.exports = { pool };
+module.exports = pool;

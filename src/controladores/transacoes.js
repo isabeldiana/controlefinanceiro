@@ -1,4 +1,4 @@
-const { pool } = require("../conexao");
+const pool = require("../conexao");
 
 const {
   verificadorCamposPreenchidosRegistroTransacao,
