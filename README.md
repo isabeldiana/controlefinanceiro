@@ -46,7 +46,7 @@ Passo a passo utilização da api:
 
 #### rota `Get` detalhar perfil
 - Utilizar o token de login
-- ruby-witty-bat.cyclic.app/usuario
+- ruby-witty-bat.cyclic.app/usuario/logado
 
 
 #### rota `Put` editar perfil
