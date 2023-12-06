@@ -40,7 +40,7 @@ Passo a passo utilização da api:
 
 {
 
- "email": "jose@email.com",
+ "email": "teste@email.com",
  "senha": "123456"
 
 
@@ -67,9 +67,6 @@ Passo a passo utilização da api:
 - Utilizar o token de login
 - ruby-witty-bat.cyclic.app/categoria
 
-#### rota  `Get` 
-- Utilizar o token de login
-- ruby-witty-bat.cyclic.app/transacao
 
 #### rota `Get`  exibir transacoes
 
