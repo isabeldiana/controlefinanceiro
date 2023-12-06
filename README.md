@@ -22,7 +22,7 @@ link da aplicação: https://ruby-witty-bat.cyclic.app/
 Passo a passo utilização da api:
 
 #### rota `Post` cadastro de usuario:
-- ruby-witty-bat.cyclic.app/usuario
+- ruby-witty-bat.cyclic.app/usuarios
 
 ```javascript
 {
