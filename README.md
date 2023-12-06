@@ -21,8 +21,8 @@ link da aplicação: https://ruby-witty-bat.cyclic.app/
 
 Passo a passo utilização da api:
 
-#### rota Post cadastro de usuario:
--- ruby-witty-bat.cyclic.app/usuario
+#### rota `Post` cadastro de usuario:
+- ruby-witty-bat.cyclic.app/usuario
 
 ```javascript
 {
@@ -31,41 +31,50 @@ Passo a passo utilização da api:
     "senha": "123456"
 }
 ```
-#### rota Post login de usuario:
--- ruby-witty-bat.cyclic.app/login
+#### rota `Post` login de usuario:
+- ruby-witty-bat.cyclic.app/login
+  
 ```javascript
+
 {
  "email": "jose@email.com",
-    "senha": "123456"
+ "senha": "123456"
+
 }
 
 ```
 
-#### rota Get detalhar perfil
--- Utilizar o token de login
--- ruby-witty-bat.cyclic.app/usuario
+#### rota `Get` detalhar perfil
+- Utilizar o token de login
+- ruby-witty-bat.cyclic.app/usuario
 
 
-#### rota Put editar perfil
--- Utilizar o token de login
--- ruby-witty-bat.cyclic.app/usuario
+#### rota `Put` editar perfil
+- Utilizar o token de login
+- ruby-witty-bat.cyclic.app/usuario
+  
+{
+    "nome": "teste",
+    "email": "teste@email.com",
+    "senha": "123456"
 
-#### rota get categorias
--- Utilizar o token de login
--- ruby-witty-bat.cyclic.app/categoria
+}
+#### rota `Get` categorias
+- Utilizar o token de login
+- ruby-witty-bat.cyclic.app/categoria
 
-#### rota  `GET` `/transacao`
--- Utilizar o token de login
--- ruby-witty-bat.cyclic.app/transacao
+#### rota  `Get` 
+- Utilizar o token de login
+- ruby-witty-bat.cyclic.app/transacao
 
-#### rota `GET` `/transacao/:id`
--- Utilizar o token de login
--- ruby-witty-bat.cyclic.app/transacao/id
+#### rota `Get` 
+- Utilizar o token de login
+- ruby-witty-bat.cyclic.app/transacao/id
 
-#### rota cadastrar transacao `POST` 
+#### rota `Post` cadastrar transacao 
 
--- Utilizar o token de login
--- ruby-witty-bat.cyclic.app/transacao/id
+- Utilizar o token de login
+- ruby-witty-bat.cyclic.app/transacao/id
 ```javascript
 // POST /transacao
 {
@@ -77,13 +86,12 @@ Passo a passo utilização da api:
 }
 ```
 
-#### `PUT` editar  transacao
+#### `put` editar  transacao
 
--- Utilizar o token de login
--- ruby-witty-bat.cyclic.app/transacao/id
+- Utilizar o token de login
+- ruby-witty-bat.cyclic.app/transacao/id
 
-```javascript
-// PUT /transacao/2
+#### PUT /transacao/2
 {
 	"descricao": "Sapato amarelo",
 	"valor": 15800,
@@ -93,10 +101,10 @@ Passo a passo utilização da api:
 }
 
 
-#### `DELETE` excluir transacao
+#### `delete` excluir transacao
 
--- Utilizar o token de login
--- ruby-witty-bat.cyclic.app/transacao/id
+- Utilizar o token de login
+- ruby-witty-bat.cyclic.app/transacao/id
 
 
 
