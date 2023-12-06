@@ -25,11 +25,13 @@ Passo a passo utilização da api:
 - ruby-witty-bat.cyclic.app/usuarios
 
 ```javascript
+
 {
     "nome": "teste",
     "email": "teste@email.com",
     "senha": "123456"
 }
+
 ```
 #### rota `Post` login de usuario:
 - ruby-witty-bat.cyclic.app/login
@@ -37,8 +39,10 @@ Passo a passo utilização da api:
 ```javascript
 
 {
+
  "email": "jose@email.com",
  "senha": "123456"
+
 
 }
 
@@ -67,23 +71,37 @@ Passo a passo utilização da api:
 - Utilizar o token de login
 - ruby-witty-bat.cyclic.app/transacao
 
-#### rota `Get` 
+#### rota `Get`  exibir transacoes
+
+- Utilizar o token de login
+- ruby-witty-bat.cyclic.app/transacao
+
+  
+#### rota `Get`  exibir transacao
+
 - Utilizar o token de login
 - ruby-witty-bat.cyclic.app/transacao/id
 
+#### rota `Get`  exibir extrato
+
+- ruby-witty-bat.cyclic.app/transacao/transacao/extrato
+  
 #### rota `Post` cadastrar transacao 
 
 - Utilizar o token de login
 - ruby-witty-bat.cyclic.app/transacao/id
+  
 ```javascript
-// POST /transacao
+
 {
     "tipo": "entrada",
     "descricao": "Salário",
     "valor": 300000,
     "data": "2022-03-24",
     "categoria_id": 6
+
 }
+
 ```
 
 #### `put` editar  transacao
@@ -91,15 +109,19 @@ Passo a passo utilização da api:
 - Utilizar o token de login
 - ruby-witty-bat.cyclic.app/transacao/id
 
-#### PUT /transacao/2
+  
+```javascript
+
 {
 	"descricao": "Sapato amarelo",
 	"valor": 15800,
 	"data": "2022-03-23 12:35:00",
 	"categoria_id": 4,
 	"tipo": "saida"
+
 }
 
+```
 
 #### `delete` excluir transacao
 
