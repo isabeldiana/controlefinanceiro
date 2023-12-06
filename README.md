@@ -18,3 +18,18 @@ link da aplicação: https://ruby-witty-bat.cyclic.app/
 - Remover transação
 - Obter extrato de transações
 - [Extra] Filtrar transações por categoria
+
+  ## ruby-witty-bat.cyclic.app/usuario
+{
+    "nome": "teste",
+    "email": "teste@email.com",
+    "senha": "123456"
+}
+
+  ## ruby-witty-bat.cyclic.app/login 
+  
+  {
+    "email": "teste@email.com",
+    "senha": "123456"
+}
+
